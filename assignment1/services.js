@@ -20,4 +20,18 @@ $("#servicesForm").submit(function(e){
         alert('Service Registered Successfully!');
         $("#serviceName").css("border-color", "");
     }
+     if(Price==""){
+        $("#servicePrice").css("border-color","red");
+    }else{
+        let newService = new Service(Name, Price, Description);
+        alert('Service Registered Successfully!');
+        $("#servicePrice").css("border-color", "");
+    }
+     if(Description==""){
+        $("#serviceDescription").css("border-color","red");
+    }else{
+        let newService = new Service(Name, Price, Description);
+        alert('Service Registered Successfully!');
+        $("#serviceDescription").css("border-color", "");
+    }
 });
