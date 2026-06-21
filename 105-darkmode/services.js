@@ -63,6 +63,8 @@ function displayServices() {
         return;
     }
 
+
+    
     let card = "";
     
     services.forEach((service, index) => {
